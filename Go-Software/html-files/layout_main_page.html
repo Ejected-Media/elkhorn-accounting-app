@@ -10,6 +10,18 @@
 .user_gate_data { text-align: right; }
 .user_gate_data div { border: 1px solid #999;  padding: 5px;  margin-bottom: 6px; }
 
+.hero_area_wrap { }
+.hero_area_data { min-height: 125px; }
+
+
+.extra_help_wrap { outline: 1px dashed #888; width: 85%; margin: 0 auto; padding: 15px; margin-top: 15px; border-top: 4px solid #555; }
+.extra_help_wrap ul li { margin-bottom: 5px; }
+
+.func_wrap { margin: 15px;  position: relative; min-height: 125px;  }
+.code_wrap { width: 95%; margin: 0 auto; background-color: #e4e4e4; margin-bottom: 45px; }
+.code_data { margin: 10px; min-height: 65px; }
+.button_wrap { position: absolute; right: 15px; bottom: 5px; }
+
 </style>
 	
 </head>
@@ -35,7 +47,42 @@
   </div><!-- - . user_gate_data - -->
 </div><!-- - . user_gate_wrap - -->
 
+<div class="hero_area_wrap">
+  <div class="hero_area_data">
+--
+  </div><!-- - . hero_area_data - -->
+   <hr />
+   <br />-- 
+</div><!-- - . hero_area_wrap - -->
 
+
+	<div class="extra_help_wrap">
+
+<!-- - . classSchedule - -->
+<div class="func_wrap">+ classSchedule
+<div class="code_wrap"><div class="code_data"> ... 
+<div id="code_output_classSchedule"></div>
+</div></div>
+<div class="button_wrap">
+<button onClick="cleanFunc_classSchedule()">Clean</button>
+<button onClick="useFunc_classSchedule()">Use</button></div>
+</div>
+
+</div>
+
+<script>
+	
+	// ~ classSchedule
+function useFunc_classSchedule() {
+	var useURL = "/action/getDataList_Schedule";
+	
+	code_output_classSchedule.innerHTML = "5";
+}
+function cleanFunc_classSchedule() {
+	code_output_classSchedule.innerHTML = "";
+}
+
+</script>
 
 </main>
 <footer>
